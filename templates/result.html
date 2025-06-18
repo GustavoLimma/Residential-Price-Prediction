@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da Estimativa</title>
+    <style>
+        .data { margin-top: 20px; border-collapse: collapse; }
+        .data th, .data td { border: 1px solid #ccc; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Resultado da Estimativa</h1>
+    <p>{{ resultado }}</p>
+    
+    <h2>Dados do Imóvel Informado:</h2>
+    {{ tabela | safe }}
+
+    <br><a href="/"><button>Voltar para o início</button></a>
+</body>
+</html>

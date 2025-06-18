@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário do Imóvel</title>
+</head>
+<body>
+    <h1>Preencha os dados do imóvel</h1>
+    <form action="/send" method="POST">
+        <label>Longitude: <input type="number" step="any" name="longitude" required></label><br>
+        <label>Latitude: <input type="number" step="any" name="latitude" required></label><br>
+        <label>Idade média das casas (housing_median_age): <input type="number" step="any" name="housing_median_age" required></label><br>
+        <label>Total de cômodos: <input type="number" step="any" name="total_rooms" required></label><br>
+        <label>Total de quartos: <input type="number" step="any" name="total_bedrooms" required></label><br>
+        <label>População: <input type="number" step="any" name="population" required></label><br>
+        <label>Domicílios: <input type="number" step="any" name="households" required></label><br>
+        <label>Renda média (median_income): <input type="number" step="any" name="median_income" required></label><br>
+        <label>Proximidade do oceano:
+            <select name="ocean_proximity" required>
+                <option value="NEAR BAY">NEAR BAY</option>
+                <option value="<1H OCEAN"><1H OCEAN</option>
+                <option value="INLAND">INLAND</option>
+                <option value="NEAR OCEAN">NEAR OCEAN</option>
+                <option value="ISLAND">ISLAND</option>
+            </select>
+        </label><br>
+        <label>Quartos por domicílio: <input type="number" step="any" name="rooms_per_household" required></label><br>
+        <label>Quartos por cômodo: <input type="number" step="any" name="bedrooms_per_room" required></label><br>
+        <button type="submit">Estimar valor</button>
+    </form>
+</body>
+</html>
